@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1.0"/>
+<title>Osawe Osaro Plumbing · Plumber in Benin City, Edo State</title>
+<meta name="description" content="Plumbing repairs, drain unblocking, water heaters and bathroom fitting in Obazagbon, Benin City, Edo State. Call or WhatsApp for a quote."/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap" rel="stylesheet"/>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+:root{--navy:#0E2A47;--blue:#1565C0;--aqua:#2BB3C0;--ink:#1B2430;--muted:#5B6B7C;--mist:#F2F7FA;--line:#DCE6EE;--red:#E4572E}
+body{font-family:Inter,Arial,sans-serif;color:var(--ink);background:#fff;line-height:1.6}
+a{color:inherit}
+
+/* top bar */
+.nav{position:sticky;top:0;z-index:20;background:var(--navy);color:#fff;box-shadow:0 4px 16px rgba(14,42,71,.25)}
+.nav-in{max-width:1180px;margin:0 auto;padding:.85rem 1.2rem;display:flex;align-items:center;justify-content:space-between;gap:1rem}
+.logo{font-weight:800;letter-spacing:.3px;text-decoration:none;display:flex;align-items:center;gap:.5rem;font-size:1.02rem}
+.logo i{width:14px;height:14px;border-radius:50%;background:var(--aqua);display:inline-block}
+.links{display:flex;gap:1.5rem;font-size:.92rem}
+.links a{text-decoration:none;color:#CFE3F1}
+.links a:hover{color:#fff}
+.menu-btn{display:none;background:none;border:1.5px solid #fff;color:#fff;border-radius:10px;width:44px;height:44px;font-size:1.3rem;cursor:pointer}
+.call-pill{background:var(--red);color:#fff;padding:.6rem 1rem;border-radius:999px;font-weight:700;text-decoration:none;font-size:.9rem;white-space:nowrap}
+
+/* hero */
+.hero{background:linear-gradient(135deg,rgba(14,42,71,.96),rgba(21,101,192,.9)),repeating-linear-gradient(0deg,rgba(255,255,255,.05) 0 1px,transparent 1px 40px),repeating-linear-gradient(90deg,rgba(255,255,255,.05) 0 1px,transparent 1px 40px);color:#fff;padding:4.5rem 1.2rem 4rem;text-align:center}
+.hero .in{max-width:900px;margin:0 auto}
+.badge{display:inline-block;background:rgba(255,255,255,.14);padding:.4rem .9rem;border-radius:999px;font-size:.85rem;font-weight:600;margin-bottom:1.2rem}
+.hero h1{font-size:2.6rem;font-weight:800;line-height:1.15;letter-spacing:-.02em}
+.hero p{max-width:640px;margin:1rem auto 1.8rem;font-size:1.08rem;color:#D8E8F4}
+.btns{display:flex;gap:.8rem;justify-content:center;flex-wrap:wrap}
+.btn{display:inline-block;padding:.95rem 1.5rem;border-radius:999px;font-weight:800;text-decoration:none;font-size:1rem}
+.btn.red{background:var(--red);color:#fff}
+.btn.green{background:#25D366;color:#fff}
+.btn.ghost{border:2px solid rgba(255,255,255,.8);color:#fff}
+.emergency{display:inline-block;margin-top:1.4rem;background:rgba(255,255,255,.1);border-radius:14px;padding:.8rem 1.1rem;font-size:.95rem}
+
+/* sections */
+.sec{max-width:1180px;margin:0 auto;padding:4rem 1.2rem}
+.kicker{color:var(--aqua);font-weight:800;font-size:.8rem;text-transform:uppercase;letter-spacing:.12em;margin-bottom:.6rem}
+h2{font-size:2rem;color:var(--navy);font-weight:800;line-height:1.2}
+.lead{color:var(--muted);margin-top:.7rem;max-width:680px}
+
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.2rem;margin-top:2.2rem}
+.card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:1.5rem;box-shadow:0 8px 20px rgba(14,42,71,.06);transition:transform .2s,box-shadow .2s}
+.card:hover{transform:translateY(-3px);box-shadow:0 14px 28px rgba(14,42,71,.12)}
+.card .ic{width:52px;height:52px;border-radius:14px;background:var(--mist);display:flex;align-items:center;justify-content:center;font-size:1.6rem;margin-bottom:.9rem}
+.card h3{color:var(--navy);font-size:1.12rem;margin-bottom:.35rem}
+.card p{color:var(--muted);font-size:.94rem}
+.card a{display:inline-block;margin-top:.8rem;color:var(--blue);font-weight:700;text-decoration:none}
+
+.urgent{background:var(--navy);color:#fff;border-radius:26px;padding:3rem 2.4rem;display:grid;grid-template-columns:1.2fr 1fr;gap:2rem;align-items:center}
+.urgent h2{color:#fff}
+.urgent p{color:#CFE3F1;margin-top:.8rem}
+.urgent .stack{display:flex;flex-direction:column;gap:.8rem}
+.urgent .stack a{text-align:center}
+
+.why{background:var(--mist);border-radius:26px;padding:2.6rem}
+.why ul{list-style:none;display:grid;grid-template-columns:1fr 1fr;gap:1rem;margin-top:1.4rem}
+.why li{background:#fff;border-radius:14px;padding:1rem 1.2rem;border:1px solid var(--line);font-weight:600;color:var(--navy)}
+.why li span{display:block;font-weight:400;color:var(--muted);font-size:.9rem;margin-top:.2rem}
+
+/* quote form */
+.quote{display:grid;grid-template-columns:1fr 1.1fr;gap:2.4rem;align-items:start}
+.form{background:#fff;border:1px solid var(--line);border-radius:22px;padding:1.8rem;box-shadow:0 14px 34px rgba(14,42,71,.08)}
+.row{display:grid;grid-template-columns:1fr 1fr;gap:.9rem}
+label{display:block;font-weight:700;color:var(--navy);font-size:.88rem;margin:.9rem 0 .3rem}
+input,select,textarea{width:100%;padding:.75rem .85rem;border:1px solid #C8D6E2;border-radius:11px;font:inherit;background:#fff}
+input:focus,select:focus,textarea:focus{outline:2px solid var(--blue);border-color:var(--blue)}
+textarea{min-height:100px;resize:vertical}
+.send{width:100%;margin-top:1.2rem;background:#25D366;color:#fff;border:0;padding:1rem;border-radius:999px;font-weight:800;font-size:1rem;cursor:pointer}
+.send:hover{background:#1EBE5A}
+.note{font-size:.84rem;color:var(--muted);margin-top:.9rem}
+.contact-list{display:grid;gap:1rem}
+.cbox{border:1px solid var(--line);border-radius:18px;padding:1.3rem 1.4rem;background:#fff}
+.cbox h3{color:var(--navy);font-size:.98rem;margin-bottom:.3rem}
+.cbox p{color:var(--ink);font-weight:600}
+.cbox a{color:var(--blue);font-weight:700;text-decoration:none}
+
+/* service area */
+.area{background:var(--navy);color:#fff;border-radius:26px;padding:2.6rem}
+.area h2{color:#fff}
+.area p{color:#CFE3F1;margin-top:.8rem;max-width:720px}
+.chips{display:flex;flex-wrap:wrap;gap:.6rem;margin-top:1.4rem}
+.chips span{background:rgba(255,255,255,.12);padding:.5rem .95rem;border-radius:999px;font-size:.9rem;font-weight:600}
+
+/* privacy */
+.privacy{background:var(--mist);border-radius:22px;padding:1.8rem 2rem;font-size:.95rem;color:var(--ink)}
+.privacy p{margin-top:.6rem}
+
+footer{background:#0A1F33;color:#B4C7D8;padding:2.4rem 1.2rem 5.5rem;font-size:.9rem;margin-top:3rem}
+footer .in{max-width:1180px;margin:0 auto;display:grid;grid-template-columns:2fr 1fr 1fr;gap:2rem}
+footer h4{color:#fff;margin-bottom:.5rem}
+
+/* phone: bottom action bar */
+.mtabs{display:none}
+
+@media(max-width:960px){
+  .links{display:none;position:absolute;top:100%;left:0;right:0;flex-direction:column;gap:0;background:var(--navy);padding:.4rem 1.2rem 1rem;border-top:1px solid rgba(255,255,255,.12)}
+  .links.open{display:flex}
+  .links a{padding:.8rem 0;border-bottom:1px solid rgba(255,255,255,.1)}
+  .menu-btn{display:block}
+  .nav-in{position:relative}
+  .call-pill{display:none}
+  .grid{grid-template-columns:1fr 1fr}
+  .urgent,.quote{grid-template-columns:1fr}
+  .why ul{grid-template-columns:1fr}
+  footer .in{grid-template-columns:1fr}
+}
+@media(max-width:620px){
+  .hero{padding:2.8rem 1.1rem 2.6rem}
+  .hero h1{font-size:1.9rem}
+  .sec{padding:2.8rem 1.1rem}
+  h2{font-size:1.6rem}
+  .grid{grid-template-columns:1fr;display:flex;overflow-x:auto;scroll-snap-type:x mandatory;gap:1rem;padding-bottom:.6rem;margin-right:-1.1rem;padding-right:1.1rem}
+  .grid .card{min-width:82%;scroll-snap-align:start}
+  .row{grid-template-columns:1fr}
+  .btns .btn{width:100%}
+  .mtabs{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:30;background:#fff;border-top:1px solid var(--line);padding:.45rem .5rem calc(.45rem + env(safe-area-inset-bottom));box-shadow:0 -6px 18px rgba(0,0,0,.08)}
+  .mtabs a{flex:1;text-align:center;text-decoration:none;color:var(--navy);font-size:.72rem;font-weight:700;padding:.45rem 0;border-radius:12px}
+  .mtabs a span{display:block;font-size:1.2rem}
+  .mtabs a.call{background:var(--red);color:#fff}
+  .mtabs a.wa{background:#25D366;color:#fff}
+  body{padding-bottom:78px}
+}
+
+.card .photo{height:150px;border-radius:14px;margin-bottom:1rem;background:linear-gradient(135deg,#E8F1F8,#D6E6F2);display:none;overflow:hidden}
+.card .photo.has{display:block}
+.card .photo img{width:100%;height:100%;object-fit:cover;display:block}
+
+.gal{display:grid;grid-template-columns:repeat(3,1fr);gap:1rem;margin-top:2rem}
+.shot{background:#fff;border:1px solid var(--line);border-radius:16px;overflow:hidden;box-shadow:0 8px 20px rgba(14,42,71,.06)}
+.shot img{width:100%;height:210px;object-fit:cover;display:block}
+.shot figcaption{padding:.7rem .9rem;font-size:.9rem;font-weight:600;color:var(--navy)}
+@media(max-width:960px){.gal{grid-template-columns:1fr 1fr}}
+@media(max-width:620px){.gal{grid-template-columns:1fr}}
+</style>
+</head>
+<body>
+
+<nav class="nav">
+  <div class="nav-in">
+    <a class="logo" href="#top"><img src="logo.jpg" alt="Osawe Osaro Plumbing logo" style="height:40px;width:auto;background:#fff;border-radius:8px;padding:3px"/><span>Osawe Osaro Plumbing</span></a>
+    <div class="links" id="links">
+      <a href="#services">Services</a>
+      <a href="#emergency">Emergency</a>
+      <a href="#quote">Get a quote</a>
+      <a href="#area">Area</a>
+      <a href="#contact">Contact</a>
+    </div>
+    <div style="display:flex;gap:.6rem;align-items:center">
+      <a class="call-pill" href="tel:+2347058617334">Call now</a>
+      <button class="menu-btn" aria-label="Open menu" onclick="document.getElementById('links').classList.toggle('open')">☰</button>
+    </div>
+  </div>
+</nav>
+
+<header class="hero" id="top" style="background:linear-gradient(135deg,rgba(14,42,71,.9),rgba(21,101,192,.82)),url('hero.svg') center/cover no-repeat;">
+  <div class="in">
+    <span class="badge">Plumbing · Benin City, Edo State</span>
+    <h1>Reliable plumbing for homes and businesses in Benin City.</h1>
+    <p>Leaking pipes, blocked drains, water heaters, bathroom and kitchen fitting. Tell us the problem, and we'll give you a clear price before any work starts.</p>
+    <div class="btns">
+      <a class="btn red" href="tel:+2347058617334">Call +234 705 861 7334</a>
+      <a class="btn green" href="https://wa.me/2347058617334">WhatsApp us</a>
+      <a class="btn ghost" href="#quote">Request a quote</a>
+    </div>
+    <div class="emergency">Leaking or flooding right now? <b>Call or WhatsApp us immediately.</b></div>
+  </div>
+</header>
+
+<section class="sec" id="services">
+  <div class="kicker">Our services</div>
+  <h2>Plumbing work we do every day.</h2>
+  <p class="lead">From a dripping tap to a full bathroom fitting, we handle the job cleanly and explain the cost first.</p>
+  <div class="grid">
+    <div class="card"><div class="photo has"><img src="brick-wall-pipes.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">💧</div><h3>Leaks and burst pipes</h3><p>Fast repairs to stop leaks, burst pipes and damaged fittings before they cause more damage.</p><a href="#quote">Request a quote →</a></div>
+    <div class="card"><div class="photo has"><img src="drain-pipework.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">🚿</div><h3>Drain unblocking</h3><p>Blocked sinks, toilets, showers and drains cleared, with advice to prevent it happening again.</p><a href="#quote">Request a quote →</a></div>
+    <div class="card"><div class="photo has"><img src="water-tank.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">🔥</div><h3>Water heaters</h3><p>Installation, repair and servicing of water heaters for your home or business.</p><a href="#quote">Request a quote →</a></div>
+    <div class="card"><div class="photo has"><img src="bathroom-grey.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">🛁</div><h3>Bathroom fitting</h3><p>Toilets, basins, showers and baths fitted neatly, with proper sealing and testing.</p><a href="#quote">Request a quote →</a></div>
+    <div class="card"><div class="photo has"><img src="green-pipe-fittings.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">🍳</div><h3>Kitchen plumbing</h3><p>Sink, tap and dishwasher connections, and kitchen pipework installed or repaired.</p><a href="#quote">Request a quote →</a></div>
+    <div class="card"><div class="photo has"><img src="maintenance-filters.jpg" alt="Plumbing work by Osawe Osaro Plumbing" loading="lazy"/></div><div class="ic">🔧</div><h3>Maintenance</h3><p>Regular checks for homes, offices and rental properties, so small problems are found early.</p><a href="#quote">Request a quote →</a></div>
+  </div>
+</section>
+
+<section class="sec" id="emergency" style="padding-top:0">
+  <div class="urgent">
+    <div>
+      <div class="kicker" style="color:#7FDCE6">Emergency plumbing</div>
+      <h2>Burst pipe or flood? Don't wait.</h2>
+      <p>Turn off the main water supply if you can, then call or WhatsApp us. Send a photo of the problem if it helps us prepare.</p>
+    </div>
+    <div class="stack">
+      <a class="btn red" href="tel:+2347058617334">Call now</a>
+      <a class="btn green" href="https://wa.me/2347058617334?text=Emergency%20plumbing%20help%20needed">WhatsApp emergency</a>
+    </div>
+  </div>
+</section>
+
+<section class="sec" style="padding-top:0">
+  <div class="why">
+    <div class="kicker">Why customers choose us</div>
+    <h2>Clear prices. Clean work.</h2>
+    <ul>
+      <li>Honest quotes<span>We explain the cost before any work starts.</span></li>
+      <li>Tidy workmanship<span>We clean up after every job, and leave the area as we found it.</span></li>
+      <li>Fast response<span>Call or WhatsApp us, and tell us what's happening.</span></li>
+      <li>Local knowledge<span>We know the homes and buildings around Benin City well.</span></li>
+    </ul>
+  </div>
+</section>
+
+<section class="sec" id="work" style="padding-top:0">
+  <div class="kicker">Our recent work</div>
+  <h2>Real jobs from our team.</h2>
+  <p class="lead">A selection of pipework, fittings and bathroom work.</p>
+  <div class="gal"><figure class="shot"><img src="pipes-wall-pvc.jpg" alt="PVC pipework on a wall" loading="lazy"/><figcaption>PVC pipework on a wall</figcaption></figure><figure class="shot"><img src="outdoor-pipes.jpg" alt="Outdoor pipe installation" loading="lazy"/><figcaption>Outdoor pipe installation</figcaption></figure><figure class="shot"><img src="trench-pipes.jpg" alt="Pipes laid in a trench" loading="lazy"/><figcaption>Pipes laid in a trench</figcaption></figure><figure class="shot"><img src="pipe-chasing.jpg" alt="Pipes fitted into the wall" loading="lazy"/><figcaption>Pipes fitted into the wall</figcaption></figure><figure class="shot"><img src="toilet-repair.jpg" alt="Toilet repair and fittings" loading="lazy"/><figcaption>Toilet repair and fittings</figcaption></figure><figure class="shot"><img src="bathroom-marble.jpg" alt="Bathroom fitting" loading="lazy"/><figcaption>Bathroom fitting</figcaption></figure><figure class="shot"><img src="water-supply.jpg" alt="Water supply point" loading="lazy"/><figcaption>Water supply point</figcaption></figure><figure class="shot"><img src="building-pipes.jpg" alt="Building drainage pipework" loading="lazy"/><figcaption>Building drainage pipework</figcaption></figure><figure class="shot"><img src="outdoor-ppr.jpg" alt="PPR pipe fitting outdoors" loading="lazy"/><figcaption>PPR pipe fitting outdoors</figcaption></figure></div>
+</section>
+
+<section class="sec" id="quote" style="padding-top:0">
+  <div class="quote">
+    <div>
+      <div class="kicker">Request a quote</div>
+      <h2>Tell us what needs fixing.</h2>
+      <p class="lead">Fill in the form and tap the green button. Your message opens in WhatsApp, already written, so you just press send.</p>
+      <p class="note" style="margin-top:1.2rem">Prefer to call? Ring <b>+234 705 861 7334</b> any time during our working hours.</p>
+    </div>
+    <form class="form" id="quoteForm" onsubmit="return sendQuote(event)">
+      <div class="row">
+        <div><label for="qName">Your name *</label><input id="qName" required/></div>
+        <div><label for="qPhone">Phone *</label><input id="qPhone" type="tel" required/></div>
+      </div>
+      <label for="qAddr">Address or area *</label>
+      <input id="qAddr" required placeholder="e.g. Obazagbon, off St Saviour Road"/>
+      <div class="row">
+        <div><label for="qType">Type of job *</label>
+          <select id="qType" required>
+            <option value="">Choose one</option>
+            <option>Leak or burst pipe</option>
+            <option>Blocked drain</option>
+            <option>Water heater</option>
+            <option>Bathroom fitting</option>
+            <option>Kitchen plumbing</option>
+            <option>Maintenance</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div><label for="qWhen">When do you need it?</label><input id="qWhen" placeholder="e.g. today, this week"/></div>
+      </div>
+      <label for="qDesc">Describe the problem</label>
+      <textarea id="qDesc" placeholder="What is happening, and where in the building?"></textarea>
+      <button class="send" type="submit">Send via WhatsApp</button>
+      <p class="note">Your details are used only to reply to your request.</p>
+    </form>
+  </div>
+</section>
+
+<section class="sec" id="area" style="padding-top:0">
+  <div class="area">
+    <div class="kicker" style="color:#7FDCE6">Where we work</div>
+    <h2>Based in Obazagbon, Benin City.</h2>
+    <p>Our office is off St Saviour Road, opposite Owowo Event Centre, Obazagbon, Edo State. We cover Benin City and nearby areas.</p>
+    <div class="chips">
+      <span>Obazagbon</span><span>St Saviour Road</span><span>Owowo</span><span>Benin City</span><span>Edo State</span>
+    </div>
+  </div>
+</section>
+
+<section class="sec" id="contact" style="padding-top:0">
+  <div class="kicker">Contact</div>
+  <h2>Get in touch.</h2>
+  <div class="grid" style="margin-top:2rem">
+    <div class="cbox"><h3>Phone</h3><p>+234 705 861 7334</p><a href="tel:+2347058617334">Call now →</a></div>
+    <div class="cbox"><h3>WhatsApp</h3><p>+234 705 861 7334</p><a href="https://wa.me/2347058617334">Message on WhatsApp →</a></div>
+    <div class="cbox"><h3>Email</h3><p>osaroosawe10@gmail.com</p><a href="mailto:osaroosawe10@gmail.com">Send an email →</a></div>
+    <div class="cbox"><h3>Office</h3><p>Obazagbon, off St Saviour Road<br/>Opposite Owowo Event Centre<br/>Benin City, Edo State</p></div>
+    <div class="cbox"><h3>Working hours</h3><p>Monday to Saturday: 8:00 AM to 6:00 PM<br/>Sunday: closed</p><p style="font-size:.9rem;color:#5B6B7C;font-weight:400;margin-top:.5rem">Emergency calls are answered during working hours. For urgent leaks outside these hours, leave a message and we will respond as soon as we can.</p></div>
+  </div>
+</section>
+
+<section class="sec" id="privacy" style="padding-top:0">
+  <div class="privacy">
+    <b>Privacy.</b>
+    <p>Details you give us through this website are used only to answer your request and arrange the work you ask for. We do not sell or share them. Messages are sent to us through WhatsApp, by phone or by email, so please keep sensitive information such as bank details out of messages.</p>
+  </div>
+</section>
+
+<footer>
+  <div class="in">
+    <div><img src="logo.jpg" alt="Osawe Osaro Plumbing logo" style="height:56px;width:auto;background:#fff;border-radius:10px;padding:5px;margin-bottom:.6rem"/><br/><b style="color:#fff">Osawe Osaro Plumbing</b><p style="margin-top:.4rem">Plumbing repairs, drains, water heaters and fitting in Benin City, Edo State.</p></div>
+    <div><b style="color:#fff">Services</b><p style="margin-top:.4rem">Leaks · Drains · Water heaters<br/>Bathroom · Kitchen · Maintenance</p></div>
+    <div><b style="color:#fff">Contact</b><p style="margin-top:.4rem">+234 705 861 7334<br/>osaroosawe10@gmail.com<br/>Obazagbon, Benin City</p></div>
+  </div>
+</footer>
+
+<nav class="mtabs" aria-label="Quick contact">
+  <a href="#top"><span>🏠</span>Home</a>
+  <a href="#services"><span>🔧</span>Services</a>
+  <a class="call" href="tel:+2347058617334"><span>📞</span>Call</a>
+  <a class="wa" href="https://wa.me/2347058617334"><span>💬</span>WhatsApp</a>
+</nav>
+
+<script>
+function sendQuote(e){
+  e.preventDefault();
+  const v = id => document.getElementById(id).value.trim();
+  const msg = [
+    'Hello Osawe Osaro Plumbing, I would like a quote.',
+    'Name: ' + v('qName'),
+    'Phone: ' + v('qPhone'),
+    'Address: ' + v('qAddr'),
+    'Type of job: ' + v('qType'),
+    'When: ' + (v('qWhen') || 'not stated'),
+    'Problem: ' + (v('qDesc') || 'not described')
+  ].join('\n');
+  window.open('https://wa.me/2347058617334?text=' + encodeURIComponent(msg), '_blank');
+  return false;
+}
+</script>
+</body>
+</html>
