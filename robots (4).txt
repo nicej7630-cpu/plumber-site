@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://city-driver.online/sitemap.xml
